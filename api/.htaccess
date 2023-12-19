@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^$ monapi.php
+RewriteRule ^([a-zA-Z]+)$ monapi.php?table=$1
+RewriteRule ^([a-zA-Z]+)/([0-9]+)$ monapi.php?table=$1&id=$2
